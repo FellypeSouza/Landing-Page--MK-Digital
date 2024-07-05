@@ -1,0 +1,43 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+.emphasis {
+  color: #ffae00;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.headLineContainer {
+  margin-top: 13rem;
+}
+.headLineContainer .headLine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headLineContainer .headLine .headLineText {
+  max-width: 40vw;
+}
+.headLineContainer .headLine .headLineText h1 {
+  font-size: 2.5rem;
+}
+
+.headerContainer {
+  margin-top: 15rem;
+  background-color: #181818;
+}/*# sourceMappingURL=style.css.map */
