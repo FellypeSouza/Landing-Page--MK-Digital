@@ -51,6 +51,7 @@ h1{
 }
 .headerContainer{
     margin-top: 15rem;
+    padding-bottom: 15rem;
     background-color: #181818;
     .header{
         padding-top: 10rem;
@@ -61,5 +62,119 @@ h1{
         h1{
             text-align: center;
         }
+    }
+}
+.benefitsContainer{
+    margin-top: 15rem;
+    .benefits{
+        max-width: 50vw;
+        margin: auto;
+        display: flex;
+    }
+    .benefit{
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 25px;
+        background-color: #101010;
+        li{
+            list-style: circle;
+            padding: 1rem;
+        }
+        h3{
+            font-weight: 500;
+            
+        }
+        p{
+            
+            font-weight: 300;
+            
+        }
+    }
+    .benefit:hover{
+        background-color: #151515;
+        transition: all 250ms;
+    }
+    .benefit:not(:hover){
+        transition: all 250ms;
+    }
+    
+}
+.btnContainer{
+    margin: auto;
+    text-align: center;
+    margin: 1rem;
+}
+.courseContentContainer{
+    margin-top: 15rem;
+    background-color: #181818;
+    .courseContent{
+        padding-top: 5rem;
+    }
+    h1{
+        text-align: center;
+    }
+}
+.contents{
+    max-width: 50vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+    .content{
+        background-color: #151515;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 25px;
+    }
+    .content:hover{
+        transition: all 250ms;
+        background-color: #171717;
+    }
+    .content:not(:hover){
+        transition: all 250ms;
+    }
+}
+.reasonsContainer{
+    padding-bottom: 15rem;
+
+}
+.reasons{
+    @extend .contents;
+    .reason{
+        @extend .content;
+    }
+}
+.opinionsContainer{
+    margin-top: 15rem;
+    max-width: 50vw;
+    margin: auto;
+    h1{
+        text-align: center;
+        margin-top: 10rem;
+    }
+    .opinions{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .opinion{
+        margin: 2rem;
+        padding: 1rem;
+        background-color: #101010;
+        border-radius: 15px;
+        .opinionPerson{
+            display: flex;
+            justify-content: left;
+            img{
+                border-radius: 50px;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .opinion:hover{
+        transition: all 250ms;
+        background-color: #151515;
+    }
+    .opinion:not(:hover){
+        transition: all 250ms;
     }
 }

@@ -60,6 +60,7 @@ h1 {
 
 .headerContainer {
   margin-top: 15rem;
+  padding-bottom: 15rem;
   background-color: #181818;
 }
 .headerContainer .header {
@@ -71,4 +72,112 @@ h1 {
 }
 .headerContainer .header h1 {
   text-align: center;
+}
+
+.benefitsContainer {
+  margin-top: 15rem;
+}
+.benefitsContainer .benefits {
+  max-width: 50vw;
+  margin: auto;
+  display: flex;
+}
+.benefitsContainer .benefit {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 25px;
+  background-color: #101010;
+}
+.benefitsContainer .benefit li {
+  list-style: circle;
+  padding: 1rem;
+}
+.benefitsContainer .benefit h3 {
+  font-weight: 500;
+}
+.benefitsContainer .benefit p {
+  font-weight: 300;
+}
+.benefitsContainer .benefit:hover {
+  background-color: #151515;
+  transition: all 250ms;
+}
+.benefitsContainer .benefit:not(:hover) {
+  transition: all 250ms;
+}
+
+.btnContainer {
+  margin: auto;
+  text-align: center;
+  margin: 1rem;
+}
+
+.courseContentContainer {
+  margin-top: 15rem;
+  background-color: #181818;
+}
+.courseContentContainer .courseContent {
+  padding-top: 5rem;
+}
+.courseContentContainer h1 {
+  text-align: center;
+}
+
+.contents, .reasons {
+  max-width: 50vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.contents .content, .reasons .content, .reasons .reason {
+  background-color: #151515;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 25px;
+}
+.contents .content:hover, .reasons .content:hover, .reasons .reason:hover {
+  transition: all 250ms;
+  background-color: #171717;
+}
+.contents .content:not(:hover), .reasons .content:not(:hover), .reasons .reason:not(:hover) {
+  transition: all 250ms;
+}
+
+.reasonsContainer {
+  padding-bottom: 15rem;
+}
+
+.opinionsContainer {
+  margin-top: 15rem;
+  max-width: 50vw;
+  margin: auto;
+}
+.opinionsContainer h1 {
+  text-align: center;
+  margin-top: 10rem;
+}
+.opinionsContainer .opinions {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.opinionsContainer .opinion {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #101010;
+  border-radius: 15px;
+}
+.opinionsContainer .opinion .opinionPerson {
+  display: flex;
+  justify-content: left;
+}
+.opinionsContainer .opinion .opinionPerson img {
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+.opinionsContainer .opinion:hover {
+  transition: all 250ms;
+  background-color: #151515;
+}
+.opinionsContainer .opinion:not(:hover) {
+  transition: all 250ms;
 }/*# sourceMappingURL=style.css.map */
