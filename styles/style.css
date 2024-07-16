@@ -88,10 +88,6 @@ h1 {
   border-radius: 25px;
   background-color: #101010;
 }
-.benefitsContainer .benefit li {
-  list-style: circle;
-  padding: 1rem;
-}
 .benefitsContainer .benefit h3 {
   font-weight: 500;
 }
@@ -104,6 +100,11 @@ h1 {
 }
 .benefitsContainer .benefit:not(:hover) {
   transition: all 250ms;
+}
+
+li {
+  list-style: circle;
+  padding: 1rem;
 }
 
 .btnContainer {
@@ -149,6 +150,7 @@ h1 {
 
 .opinionsContainer {
   margin-top: 15rem;
+  padding-bottom: 10rem;
   max-width: 50vw;
   margin: auto;
 }
@@ -180,4 +182,44 @@ h1 {
 }
 .opinionsContainer .opinion:not(:hover) {
   transition: all 250ms;
+}
+
+.valuesContainer {
+  background-color: #181818;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.valuesContainer h2 {
+  font-size: 2rem;
+}
+.valuesContainer .values {
+  max-width: 50vw;
+  margin: auto;
+  padding: 2rem;
+}
+.valuesContainer .payments {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.valuesContainer .offerTimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.valuesContainer .offerTimer h1, .valuesContainer .offerTimer h2 {
+  margin: 1rem;
+}
+
+.counter h2 {
+  font-size: 2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+}
+.footer h4 {
+  font-weight: 200;
 }/*# sourceMappingURL=style.css.map */
