@@ -46,6 +46,66 @@ h1 {
   transition: all 250ms;
 }
 
+@media (max-width: 2400px) {
+  .contents, .reasons {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1900px) {
+  .benefits {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1650px) {
+  .headLine {
+    flex-direction: column;
+  }
+  .headLine .headLineText {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 1500px) {
+  .headLineImage img {
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .offerTimer h1 {
+    font-size: 1.5rem;
+  }
+  .valuesContainer h2 {
+    font-size: 1rem;
+  }
+  .payments {
+    flex-direction: column;
+  }
+  .payments img {
+    display: none;
+  }
+  .headLineImage img {
+    display: none;
+  }
+  .offerButton {
+    margin: 0;
+  }
+}
+@media (max-width: 420px) {
+  .headLine h1 {
+    font-size: 1.25rem;
+  }
+  .headLine h2 {
+    font-size: 1rem;
+  }
+  .headLine h3 {
+    font-size: 1rem;
+  }
+  .headLine .offerButton {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  }
+  .header * {
+    font-size: 1rem;
+  }
+}
 .headLineContainer {
   margin-top: 13rem;
 }
@@ -68,10 +128,6 @@ h1 {
   max-width: 50vw;
   margin: auto;
   line-height: 2rem;
-  text-align: justify;
-}
-.headerContainer .header h1 {
-  text-align: center;
 }
 
 .benefitsContainer {
@@ -83,7 +139,7 @@ h1 {
   display: flex;
 }
 .benefitsContainer .benefit {
-  margin: 2rem;
+  margin: 1rem;
   padding: 2rem;
   border-radius: 25px;
   background-color: #101010;
@@ -127,14 +183,15 @@ li {
 .contents, .reasons {
   max-width: 50vw;
   margin: auto;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: flex;
 }
 .contents .content, .reasons .content, .reasons .reason {
   background-color: #151515;
   margin: 1rem;
   padding: 1rem;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
 }
 .contents .content:hover, .reasons .content:hover, .reasons .reason:hover {
   transition: all 250ms;
@@ -159,8 +216,8 @@ li {
   margin-top: 10rem;
 }
 .opinionsContainer .opinions {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-direction: column;
 }
 .opinionsContainer .opinion {
   margin: 2rem;
@@ -196,20 +253,16 @@ li {
 .valuesContainer .values {
   max-width: 50vw;
   margin: auto;
-  padding: 2rem;
 }
 .valuesContainer .payments {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  margin: 2rem;
 }
 .valuesContainer .offerTimer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.valuesContainer .offerTimer h1, .valuesContainer .offerTimer h2 {
-  margin: 1rem;
 }
 
 .counter h2 {
